@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+form {
+    /* background-color: #fff; */
+    background-image: url("https://media.istockphoto.com/id/1360927961/photo/abstract-background-with-interweaving-of-colored-lines-and-dots-network-connection-structure.webp?s=2048x2048&w=is&k=20&c=Ww3pan8S-SKNCBxjYNAhNM6IevmOhn8qz_jO2tIA87Y=");
+    border: 6px double black;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 750px;
+    margin: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    color: white;
+}
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.form-group label {
+    flex: 0 0 30%;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 2;
+}
+.capitalize {
+    text-transform: capitalize; 
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.checkbox-group {
+    gap: 10px;
+}
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+    flex: unset;
+}
+.radio-group label,
+.checkbox-group label {
+    margin-right: 10px;
+}
+.genders{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.hobbies{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.hobbies, .genders input {
+    margin-left: 20px;
+  }
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+button {
+    background-color: #0e6a59;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+button:hover {
+    background-color: #60c9b2;
+}
+button:active {
+    background-color: #4db198;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        margin: 20px;
+        width: 90%;
+    }
+    .form-group {
+        flex-direction: column;
+    }
+    .hobbies{
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

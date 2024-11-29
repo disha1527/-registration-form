@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <form method="post">
+        <h1>Registration Form</h1>
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="first_name" class="capitalize" placeholder="Enter First Name" required>
+        </div>
+        <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="last_name" class="capitalize" placeholder="Enter Last Name" required>
+        </div>
+        <div class="form-group">
+            <label for="user-name">Username</label>
+            <input type="text" id="user-name" name="username" placeholder="Enter Username" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" minlength="6"
+                maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}"
+                title="Password must be at least 8 characters long, contain at least one number, one uppercase letter, one lowercase letter, and one special character (@#$%^&+=)."
+                required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password"
+                minlength="6" maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}"
+                title="Password must be at least 8 characters long, contain at least one number, one uppercase letter, one lowercase letter, and one special character (@#$%^&+=)."
+                required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <div class="genders">
+                <div class="male-gender">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div class="female-gender">
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group hobby">
+            <label for="hobby">Hobby</label>
+            <div class="hobbies">
+                <div class="read-hobby">
+                    <input type="checkbox" id="reading" name="hobby[]" value="Reading" required>
+                    <label for="reading">Reading</label>
+                </div>
+                <div class="write-hobby">
+                    <input type="checkbox" id="writing" name="hobby[]" value="Writing" required>
+                    <label for="writing">Writing</label>
+                </div>
+                <div class="sing-hobby">
+                    <input type="checkbox" id="singing" name="hobby[]" value="Singing" required>
+                    <label for="singing">Singing</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" class="capitalize" placeholder="Enter Your City" required>
+        </div>
+        <div class="form-group">
+            <label for="car">Select Car</label>
+            <select id="car" name="car" required>
+                <option value="">Select Car</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Ford">Ford</option>
+                <option value="Audi">Audi</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Jeep">Jeep</option>
+                <option value="GMC">GMC</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Cadillac">Cad</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="5" placeholder="Enter Comment" required></textarea>
+        </div>
+        <div class="buttons">
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+        </div>
+    </form>
+</body>
+
+</html>
